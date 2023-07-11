@@ -1,0 +1,9 @@
+export enum ISSUESTATUS {
+  NEW = 'NEW',
+
+  CLOSED = 'CLOSED',
+
+  APPROVED = 'APPROVED',
+
+  REJECTED = 'REJECTED',
+}

@@ -1,0 +1,59 @@
+application {
+    config {
+        baseName gateway
+        reactive false
+        packageName edu.oau
+        applicationType gateway
+        authenticationType jwt
+        buildTool maven
+        clientFramework react
+        devDatabaseType postgresql
+        prodDatabaseType postgresql
+        serverPort 8081
+    }
+    entities *
+    dto * with mapstruct
+    service all with serviceImpl
+    paginate all with pagination
+}
+enum ISSUESTATUS {
+    NEW,CLOSED,APPROVED,REJECTED
+}
+enum CLASSIFICATION {
+    COMPLAINT,ENQUIRY
+}
+enum ENTRYCHANNEL {
+    WHATSAPP,MESSANGER
+}
+
+entity Category {
+    code String
+    description String
+}
+entity Issue {
+    createdDate LocalDate
+    description String
+    status ISSUESTATUS
+    classification CLASSIFICATION
+    entryChannel ENTRYCHANNEL
+}
+entity Comment {
+    createdDate LocalDate
+    subject String
+    comment String
+}
+entity Customer {
+    firstName String
+    secondName String
+    email String
+    phoneNumber String
+}
+relationship OneToMany {
+    Category{subcategory} to Category
+    Issue{comments} to Comment
+}
+relationship ManyToOne {
+    Category{parent} to Category
+    Issue{category} to Category
+    Issue{customer} to Customer
+}

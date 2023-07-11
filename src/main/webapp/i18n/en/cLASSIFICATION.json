@@ -1,0 +1,9 @@
+{
+  "gatewayApp": {
+    "CLASSIFICATION": {
+      "null": "",
+      "COMPLAINT": "COMPLAINT",
+      "ENQUIRY": "ENQUIRY"
+    }
+  }
+}

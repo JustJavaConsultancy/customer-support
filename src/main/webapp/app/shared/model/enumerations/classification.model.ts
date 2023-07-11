@@ -1,0 +1,5 @@
+export enum CLASSIFICATION {
+  COMPLAINT = 'COMPLAINT',
+
+  ENQUIRY = 'ENQUIRY',
+}

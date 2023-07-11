@@ -1,0 +1,31 @@
+{
+  "gatewayApp": {
+    "issue": {
+      "home": {
+        "title": "Issues",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Issue",
+        "createOrEditLabel": "Create or edit a Issue",
+        "notFound": "No Issues found"
+      },
+      "created": "A new Issue is created with identifier {{ param }}",
+      "updated": "A Issue is updated with identifier {{ param }}",
+      "deleted": "A Issue is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Issue {{ id }}?"
+      },
+      "detail": {
+        "title": "Issue"
+      },
+      "id": "ID",
+      "createdDate": "Created Date",
+      "description": "Description",
+      "status": "Status",
+      "classification": "Classification",
+      "entryChannel": "Entry Channel",
+      "comments": "Comments",
+      "category": "Category",
+      "customer": "Customer"
+    }
+  }
+}

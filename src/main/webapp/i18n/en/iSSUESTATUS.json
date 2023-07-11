@@ -1,0 +1,11 @@
+{
+  "gatewayApp": {
+    "ISSUESTATUS": {
+      "null": "",
+      "NEW": "NEW",
+      "CLOSED": "CLOSED",
+      "APPROVED": "APPROVED",
+      "REJECTED": "REJECTED"
+    }
+  }
+}

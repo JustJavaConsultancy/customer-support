@@ -1,0 +1,57 @@
+{
+  "applications": ["gateway"],
+  "changelogDate": "20230711103800",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "issue",
+  "fields": [
+    {
+      "fieldName": "createdDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "ISSUESTATUS",
+      "fieldValues": "NEW,CLOSED,APPROVED,REJECTED"
+    },
+    {
+      "fieldName": "classification",
+      "fieldType": "CLASSIFICATION",
+      "fieldValues": "COMPLAINT,ENQUIRY"
+    },
+    {
+      "fieldName": "entryChannel",
+      "fieldType": "ENTRYCHANNEL",
+      "fieldValues": "WHATSAPP,MESSANGER"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Issue",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "comment",
+      "otherEntityRelationshipName": "issue",
+      "relationshipName": "comments",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "category",
+      "relationshipName": "category",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "customer",
+      "relationshipName": "customer",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

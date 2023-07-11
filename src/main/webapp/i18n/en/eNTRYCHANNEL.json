@@ -1,0 +1,9 @@
+{
+  "gatewayApp": {
+    "ENTRYCHANNEL": {
+      "null": "",
+      "WHATSAPP": "WHATSAPP",
+      "MESSANGER": "MESSANGER"
+    }
+  }
+}

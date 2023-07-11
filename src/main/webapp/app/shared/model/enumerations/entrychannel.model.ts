@@ -1,0 +1,5 @@
+export enum ENTRYCHANNEL {
+  WHATSAPP = 'WHATSAPP',
+
+  MESSANGER = 'MESSANGER',
+}
