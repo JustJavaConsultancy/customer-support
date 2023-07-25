@@ -47,11 +47,11 @@ export const CategoryDetail = () => {
           <dt>
             <Translate contentKey="gatewayApp.category.parent">Parent</Translate>
           </dt>
-          <dd>{categoryEntity.parent ? categoryEntity.parent.id : ''}</dd>
+          <dd>{categoryEntity.parent ? categoryEntity.parent.description : ''}</dd>
           <dt>
             <Translate contentKey="gatewayApp.category.category">Category</Translate>
           </dt>
-          <dd>{categoryEntity.category ? categoryEntity.category.id : ''}</dd>
+          <dd>{categoryEntity.category ? categoryEntity.category.description : ''}</dd>
         </dl>
         <Button tag={Link} to="/category" replace color="info" data-cy="entityDetailsBackButton">
           <FontAwesomeIcon icon="arrow-left" />{' '}

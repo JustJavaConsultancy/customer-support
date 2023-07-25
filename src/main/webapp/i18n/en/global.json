@@ -1,14 +1,14 @@
 {
   "global": {
-    "title": "Gateway",
+    "title": "Customer Support Knowledge Base System(CSKBS)",
     "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
     "menu": {
       "home": "Home",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
-        "main": "Entities",
+        "main": "Setup",
         "category": "Category",
-        "issue": "Issue",
+        "issue": "Knowledge Base",
         "comment": "Comment",
         "customer": "Customer",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
@@ -88,7 +88,7 @@
       "id": "ID"
     },
     "ribbon": {
-      "dev": "Development"
+      "dev": "BSC PROJECT"
     },
     "item-count": "Showing {{first}} - {{second}} of {{total}} items."
   },
@@ -148,5 +148,5 @@
       "not.image": "File was expected to be an image but was found to be \"{{ fileType }}\""
     }
   },
-  "footer": "This is your footer"
+  "footer": "Copyright 2023: Customer Support Knowledge Base!!"
 }
